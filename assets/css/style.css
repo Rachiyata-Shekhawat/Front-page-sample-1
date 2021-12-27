@@ -51,6 +51,8 @@ header {
   color: black;
 }
 
+.menuItemName:hover { color: rgb(189, 9, 9);}
+
 main { height: 19rem;}
 
 main p { text-align: center;}
@@ -102,8 +104,13 @@ footer {
       font-size: 1.1rem;
     }
 
+    .menuItemName:hover { 
+      background-color: red; 
+      color: black;
+    }
+  
     main { 
-    width: 70%;
-    height: 23rem;
-  }
+      width: 70%;
+      height: 29rem;
+    }
 }

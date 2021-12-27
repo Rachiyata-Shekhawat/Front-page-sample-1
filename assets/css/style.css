@@ -1,0 +1,109 @@
+/* ======================= Common styling ========================== */
+
+html { font-size: 16px;}
+
+ul li { display: inline-block; }
+
+a { text-decoration: none; }
+
+.flex { display: flex;}
+
+* { 
+	box-sizing: border-box; 
+	font-family: 'Source Sans Pro',sans-serif;
+}
+
+
+/* ======================= header styling ========================== */
+
+header {
+  padding: 1rem 1.5rem;
+  background-color: rgb(189, 9, 9);
+}
+
+.logo { margin: 0rem 1rem 0rem 0rem; }
+
+.logo a img { width: 100%; }
+
+.header_heading {
+  margin: 0rem;
+  align-self: flex-end;
+  font-size: 2rem;
+  color: white;
+}
+
+
+/* ====================== container styling ======================== */
+
+.container { flex-direction: column; }
+
+.mainNav { background-color: #808080; }
+
+.mainNav ul {
+  margin: 0rem;
+  padding: 0rem;
+  justify-content: space-around; 
+}
+
+.menuItemName {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: black;
+}
+
+main { height: 19rem;}
+
+main p { text-align: center;}
+
+/* ======================= footer styling ========================== */
+
+footer {
+  background-color: rgb(189, 9, 9);
+  height: 3rem;
+}
+
+
+/* ======================= media queries ========================== */
+
+@media only screen and (min-width:635px) {
+  /* ----------------------- header styling ----------------------- */
+    .logo a img { height: 4rem; }
+
+    .header_heading { font-size: 4rem; }
+
+
+  /* ---------------------- container styling ---------------------- */
+    .container { flex-direction: row; }
+
+    .mainNav { padding: 3rem 3rem 0rem 3rem; }
+
+    .mainNav ul {
+      flex-direction: column;
+      width: 11rem;
+    }
+
+    .mainNav ul li a { display: flex; }
+
+    .menuLineRed {
+      border-top: 1px solid rgb(205 196 196);
+      background-color: red;
+      width: 10px;
+    }
+
+    .mainNav ul li:first-child .menuLineRed,
+    .mainNav ul li:first-child .menuItemName { border: none;} 
+
+    .menuItemName {
+      width: 100%;
+      margin: 0rem;
+      border-top: 1px solid #808080;
+      padding: 0.6rem 0rem 0.6rem 1rem;
+      background-color: rgb(205 196 196);
+      font-size: 1.1rem;
+    }
+
+    main { 
+    width: 70%;
+    height: 23rem;
+  }
+}
